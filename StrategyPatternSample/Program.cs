@@ -15,7 +15,7 @@ namespace StrategyPatternSample
         {
             int a = 10;
             int b = 5;
-            Console.WriteLine(_mathStrategy.Calculate(a, b, Operator.Add));
+            Console.WriteLine($"The result is equal to: {_mathStrategy.Calculate(a, b, Operator.Add)}");
         }
 
         private static IList<IMathOperator<Operator>> GetMathOperators()
